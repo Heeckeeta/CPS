@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+      <title>CPS</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body class="body">
+      <sidebar class="sidebar hidden">
+          <div class="sidebar__header">
+              <div class="sidebar__close">
+                  <img src="img/close.svg" alt="" width="40" height="40">
+              </div>
+              <div>
+                  <img src="img/logo.svg" alt="" width="97" height="51">
+              </div>
+              <div class="sidebar__search">
+                  <img src="img/search.svg" alt="" width="40" height="40">
+              </div>
+          </div>
+          <ul class="sidebar__menu">
+              <li class="sidebar__item">Ремонт техники</li>
+              <li class="sidebar__item">Услуги и сервисы</li>
+              <li class="sidebar__item">Корпоративным клиентам</li>
+              <li class="sidebar__item">Продавцам техники</li>
+              <li class="sidebar__item">Партнерам</li>
+              <li class="sidebar__item">Производителям</li>
+              <li class="sidebar__item">Наши сервисные центры</li>
+              <li class="sidebar__item">Контакты</li>
+          </ul>
+          <div class="sidebar__footer">
+              <div class="sidebar__navigation">
+                  <div>
+                      <img src="img/call.svg" alt="" width="40" height="40" class="sidebar__call">
+                  </div>
+                  <div class="sidebar__chat">
+                      <img src="img/chat.svg" alt="" width="40" height="40">
+                  </div>
+                  <div>
+                      <img src="img/profile.svg" alt="" width="40" height="40">
+                  </div>
+              </div>
+              <p>
+                  mail@cps.com
+              </p>
+              <p class="sidebar__phone">
+                  8 800 890 8900
+              </p>
+              <p>
+                  <span class="sidebar__lang">RU</span> <span class="sidebar__lang">EN</span> <span class="sidebar__lang">CH</span>
+              </p>
+          </div>
+      </sidebar>
+      <div class="not-sidebar hidden"></div>
+      <div class="modal feedback hidden">
+        <div class="modal__close close-chat">
+            <img src="img/close.svg" alt="close" width="40" height="40">
+        </div>
+        <h1 class="modal__h">Обратная связь</h1>
+        <form action="#" method="post">
+            <input type="text" name="name" required placeholder="Имя" class="modal__input feedback__input"><br>
+            <input type="tel" name="tel" required placeholder="Телефон" class="modal__input feedback__input"><br>
+            <input type="email" name="email" required placeholder="Электронная почта" class="modal__input feedback__input"><br>
+            <textarea name="feedback" required placeholder="Сообщение" class="modal__input feedback__message"></textarea>
+            <p class="modal__text">
+                Нажимая “отправить”, вы даете согласие на <span class="modal__red-text">обработку персональных данных</span> 
+                и соглашаетесь с нашей <span class="modal__red-text">политикой конфиденциальности</span>
+            </p>
+            <input type="image" src="img/send.svg" alt="send" width="136" height="32" class="modal__send">
+        </form>
+      </div>
+      <div class="modal call hidden">
+        <div class="modal__close close-call">
+            <img src="img/close.svg" alt="close" width="40" height="40">
+        </div>
+        <h1 class="modal__h">Заказать звонок</h1>
+        <form action="#" method="post">
+            <input type="tel" name="tel" required placeholder="Телефон" class="modal__input">
+            <p class="modal__text">
+                Нажимая “отправить”, вы даете согласие на <span class="modal__red-text">обработку персональных данных</span> 
+                и соглашаетесь с нашей <span class="modal__red-text">политикой конфиденциальности</span>
+            </p>
+            <input type="image" src="img/send.svg" alt="send" width="136" height="32" class="modal__send">
+        </form>
+      </div>
+      <main class="main">
+          <header class="menu">
+            <nav class="navigation">
+                <div class="navigation__left">
+                    <div class="navigation__item navigation__burger">
+                        <img src="img/burger.svg" alt="" width="40" height="40">
+                    </div>
+                    <div class="navigation__logo">
+                        <img src="img/logo.svg" alt="" width="97" height="51" width="40" height="40">
+                    </div>
+                </div>
+                <div class="navigation__right">
+                    <div class="navigation__item navigation__checkstatus">
+                        <img src="img/checkstatus.svg" alt="" width="40" height="40">
+                    </div>
+                    <div class="navigation__item navigation__repair">
+                        <img src="img/repair.svg" width="40" height="40" alt="">
+                    </div>
+                    <div class="navigation__item navigation__profile">
+                        <img src="img/profile.svg" width="40" height="40" alt="">
+                    </div>
+                    <div class="navigation__item navigation__chat">
+                        <img src="img/chat.svg" alt="" width="40" height="40">
+                    </div>
+                    <div class="navigation__item navigation__call">
+                        <img src="img/call.svg" alt="" width="40" height="40">
+                    </div>
+                </div>
+            </nav>
+          </header>
+          <div class="block1120">
+              <h1 class="offers__title">Услуги и сервисы</h1>
+              <div class="block1120__menu">
+                  <div class="block1120__checkstatus">
+                      <p>Статус ремонта</p>
+                      <img src="img/checkstatus.svg" width="40" height="40" alt="" class="block1120__checkstatus-icon">
+                  </div>
+                  <div class="block1120__repair">
+                      <p>Оставить заявку</p>
+                      <img src="img/repair.svg" width="40" height="40" class="block1120__repair-icon">
+                  </div>
+              </div>
+          </div>
+          <section class="slide-menu">
+              <p class="slide-menu__item">Ремонтируемые бренды</p>
+              <p class="slide-menu__item">Ремонтируемые устройства</p>
+              <p class="slide-menu__item">Цены за услуги</p>
+              <p class="slide-menu__item">Аренда сервисных центров</p>
+              <p class="slide-menu__item">Специальные цены</p>
+              <p class="slide-menu__item">Отзывы</p>
+          </section>
+          <article class="first-block">
+              <div class="first-block__description">
+                  <p class="first-block__text320">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                  <p class="first-block__text320--more hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество 
+                    постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.<br><br>Используя только 
+                    оригинальные запчасти, мы гарантируем качество и долговечность выполненных работ. Вы можете быть уверены, что ваше устройство в надежных руках.</p>
+                  <p class="first-block__text768"><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="first-block__text1120">, что подтверждает 
+                    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                    <span class="first-block__text768--more hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям 
+                        и, в свою очередь, советуют нас родным и близким.</span></p>
+                  <p class="first-block__text--more hidden"><br>Используя только оригинальные запчасти, мы гарантируем качество и долговечность выполненных работ. 
+                    Вы можете быть уверены, что ваше устройство в надежных руках.</p>                  
+                  <div class="read-more read">
+                      <img src="img/expand.svg" alt="" width="24" height="24" class="read-more__expand">
+                      <p>Читать далее</p>
+                  </div>
+                  <div class="read-more not-read hidden">
+                    <img src="img/expandUp.svg" alt="" height="24" class="read-more__expand">
+                    <p>Скрыть</p>
+                  </div>
+              </div>
+              <div class="main-image">
+                  <img src="img/main-image.png" alt="" class="main-image__cps">
+              </div>
+          </article>
+          <section class="companys">
+              <div class="slider-description"><p class="slider-description__text">Ремонт техники различных брендов</p></div>
+              <div class="swiper companys__swiper" data-mobile="false">
+                  <div class="swiper-wrapper companys-wrapper">
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany1.png" alt="logo" width="108" height="32"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany2.png" alt="logo" width="128" height="28.6"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>  
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany3.png" alt="logo" width="116" height="38.52"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany4.png" alt="logo" width="52" height="52"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany5.png" alt="logo" width="44" height="44"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany6.png" alt="logo" width="94" height="24"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany7.png" alt="logo" width="128" height="21"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany8.png" alt="logo" width="128" height="25.6"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany1.png" alt="logo" width="108" height="32"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany2.png" alt="logo" width="128" height="28.6"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide companys-slide">
+                          <div class="slider__card">
+                              <div class="slider__logo"><img src="img/logoOfCompany3.png" alt="logo" width="116" height="38.52"></div>
+                              <div class="slider__go"><img src="img/go.svg" alt="" width="40" height="40"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination companys-pagination"></div>
+              </div>
+              <div class="read-more show-companys hidden">
+                  <img src="img/expand.svg" alt="" height="24" class="read-more__expand">
+                  <p>Показать все</p>
+              </div>
+              <div class="read-more not-show-companys hidden">
+                  <img src="img/expandUp.svg" alt="" width="24" height="24" class="read-more__expand">
+                  <p>Скрыть</p>
+              </div>
+          </section>
+          <section class="repair">
+            <div class="slider-description"><p class="slider-description__text">Ремонт различных видов техники</p></div>
+            <div class="swiper repair__swiper" data-mobile="false">
+              <div class="swiper-wrapper repair__wrapper">
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт ноутбуков</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт планшетов</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт пк</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт мониторов</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт телефонов</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+                <div class="swiper-slide repair__slide">
+                  <div class="repair-card">
+                    <p class="repair__text">Ремонт телевизоров</p>
+                    <img src="img/go.svg" alt="" width="40" height="40" class="repair__go">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination repair__pagination"></div>
+            </div>
+            <div class="read-more show-repair hidden">
+              <img src="img/expand.svg" alt="" width="24" height="24" class="read-more__expand">
+              <p>Показать все</p>
+          </div>
+          <div class="read-more not-show-repair hidden">
+              <img src="img/expandUp.svg" alt="" width="24" height="24" class="read-more__expand">
+              <p>Скрыть</p>
+          </div>
+          </section>
+          <section class="price">
+              <div class="slider-description"><p class="slider-description__text">Цены на услуги</p></div>
+              <div class="price__container">
+                  <p class="price__name">Ремонтные услуги</p>
+                  <p class="price__name">Цена</p>
+                  <p class="price__name">Срок</p>
+              </div>
+              <div class="swiper price__swiper" data-mobile="false">
+                <div class="swiper-wrapper price__swiper-wrapper">
+                  <div class="swiper-slide price__swiper-slide">
+                      <div class="price__slide price__slide1">
+                        <p class="price__description">Ремонтные услуги</p>
+                        <p class="price__item price__item1">Диагностика</p>
+                        <p class="price__description">Цена</p>
+                        <p class="price__item price__item2">Бесплатно</p>
+                        <p class="price__description">Срок</p>
+                        <p class="price__item price__item3">30 мин</p>
+                        <img src="img/order.svg" alt="order" width="119" height="32" class="order-image">
+                      </div>
+                  </div>
+                  <div class="swiper-slide price__swiper-slide">
+                      <div class="price__slide">
+                        <p class="price__description">Ремонтные услуги</p>
+                        <p class="price__item price__item1">Замена дисплея</p>
+                        <p class="price__description">Цена</p>
+                        <p class="price__item price__item2">1 000 ₽</p>
+                        <p class="price__description">Срок</p>
+                        <p class="price__item price__item3">30-120 мин</p>
+                        <img src="img/order.svg" alt="order" width="119" height="32" class="order-image">
+                      </div>
+                  </div>
+                  <div class="swiper-slide price__swiper-slide">
+                      <div class="price__slide">
+                        <p class="price__description">Ремонтные услуги</p>
+                        <p class="price__item price__item1">Замена полифонического динамика</p>
+                        <p class="price__description">Цена</p>
+                        <p class="price__item price__item2">1 000 ₽</p>
+                        <p class="price__description">Срок</p>
+                        <p class="price__item price__item3">30-120 мин</p>
+                        <img src="img/order.svg" alt="order" width="119" height="32" class="order-image">
+                      </div>
+                  </div>
+                  <div class="swiper-slide price__swiper-slide">
+                    <div class="price__slide">
+                      <p class="price__description">Ремонтные услуги</p>
+                      <p class="price__item price__item1">Тестирование с выдачей заключения</p>
+                      <p class="price__description">Цена</p>
+                      <p class="price__item price__item2">1 000 ₽</p>
+                      <p class="price__description">Срок</p>
+                      <p class="price__item price__item3">30-120 мин</p>
+                      <img src="img/order.svg" alt="order" width="119" height="32" class="order-image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide price__swiper-slide">
+                    <div class="price__slide price__slide2">
+                      <p class="price__description">Ремонтные услуги</p>
+                      <p class="price__item price__item1">Замена программного обеспечения</p>
+                      <p class="price__description">Цена</p>
+                      <p class="price__item price__item2">1 000 ₽</p>
+                      <p class="price__description">Срок</p>
+                      <p class="price__item price__item3">30-120 мин</p>
+                      <img src="img/order.svg" alt="order" width="119" height="32" class="order-image">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination price__pagination"></div>
+              </div>
+              <p class="price__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
+                Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+              <p class="price__offer">Получить коммерческое предложение
+              <img src="img/more.svg" alt="" width="24" height="24" class="price__offer-image"></p>
+          </section>
+          <footer class="footer">
+              <p class="footer__text">© 2019 CPS<br>Разработано командой Apesong</p>
+              <p class="footer__text">Политика конфиденциальности</p>
+              <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
+          </footer>
+      </main>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+  </html>
