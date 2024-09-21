@@ -1,0 +1,32 @@
+$border-hover: #B8FFEC;
+$bgHover: #ffffff;
+$sizeM: 768px;
+$sizeL: 1439px;
+$sizeLl: 1440px;
+
+.slide-menu{
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  margin: 0 16px 24px 16px;
+  @media (min-width: $sizeM) and (max-width: $sizeL){
+    margin-bottom: 32px;
+  }
+  @media (min-width: $sizeLl){
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+.slide-menu__item{
+  white-space: nowrap;
+  margin: 0;
+  padding: 6px 16px;
+}
+
+.slide-menu__item:hover{
+  background-color: $bgHover;
+  border: 2px solid $border-hover;
+  border-radius: 6px;
+  transition-duration: 0.2s;
+}

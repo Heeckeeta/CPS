@@ -1,0 +1,74 @@
+$element: #D9FFF5;
+$sizeM: 768px;
+$sizeL: 1439px;
+$sizeLl: 1440px;
+
+.block1120{
+  @media (max-width: $sizeL){
+    &::before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $element;
+      margin-top: 0;
+    }
+  }
+  @media (min-width: $sizeLl){
+      display: flex;
+  }
+}
+
+.offers__title{
+  margin: 24px 16px 24px 0;
+  padding: 0;
+  @media (min-width: $sizeM) and (max-width: $sizeL){
+    margin-bottom: 32px;
+  }
+  @media (min-width: $sizeLl){
+    width: 50%;
+    margin-top: 42px;
+    margin-bottom: 8px;
+  }
+  &::before{
+      content: "";
+      display: block;
+      width: 4px;
+      height: 40px;
+      background-color: $element;
+      margin-right: 16px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      float: left;
+  }
+}
+
+.block1120__menu{
+  display: none;
+  @media (min-width: $sizeLl){
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 42px;
+  }
+}
+
+.block1120__checkstatus{
+    display: flex;
+    align-items: center;
+}
+
+.block1120__checkstatus-icon{
+  margin-right: 32px;
+  margin-left: 9px;
+}
+
+.block1120__repair{
+    display: flex;
+    align-items: center;
+}
+
+.block1120__repair-icon{
+  margin-right: 32px;
+  margin-left: 9px;
+}

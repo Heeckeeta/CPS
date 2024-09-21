@@ -1,0 +1,23 @@
+$bgColor: #F8F8F8;
+$element: #D9FFF5;
+$sizeM: 768px;
+$sizeL: 1439px;
+$sizeLl: 1440px;
+
+.main{
+  max-width: $sizeLl;
+  background-color: $bgColor;
+  padding-top: 0;
+  padding-bottom: 35px;
+  @media (min-width: $sizeM) and (max-width: $sizeLl){
+    padding-right: 1px;
+  }
+  @media (min-width: $sizeLl){
+    padding-right: 1px;
+    width: 1120px;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+  }
+}
+

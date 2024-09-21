@@ -1,0 +1,64 @@
+$bgColorCard: #ffffff;
+$borderCard: #EAEAEA;
+$sizeM: 768px;
+$sizeL: 1439px;
+$sizeLl: 1440px;
+
+.repair{
+  padding: 0;
+  margin: 0;
+}
+
+.repair-card{
+  width: 208px;
+  height: 128px;
+  padding: 16px;
+  background-color: $bgColorCard;
+  border: solid 1px $borderCard;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.repair__text{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.repair__go{
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.repair__swiper{
+  margin-left: 16px;
+  @media (min-width: $sizeM){
+    margin-left: 24px;
+  }
+  @media (min-width: $sizeLl){
+    margin-left: 32px;
+  }
+}
+
+.repair__wrapper{
+  @media (min-width: $sizeM){
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.repair__slide{
+  width: 240px;
+  @media (min-width: $sizeM){
+    margin-right: 2%;
+    margin-bottom: 16px;
+  }
+}
+
+.repair__pagination{
+  position: relative;
+  margin-top: 21px;
+  @media (min-width: $sizeM){
+    display: none;
+  }
+}

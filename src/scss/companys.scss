@@ -1,0 +1,70 @@
+$pagination-bullet: #B5B6BC;
+$bgColorCard: #ffffff;
+$borderCard: #EAEAEA;
+$sizeM: 768px;
+$sizeL: 1439px;
+$sizeLl: 1440px;
+
+.companys{
+  padding: 0;
+  margin: 0;
+}
+
+.slider__card{
+  width: 240px;
+  height: 72px;
+  background-color: $bgColorCard;
+  border: solid 1px $borderCard;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.slider__logo{
+  margin-left: 16px;
+  margin-right: auto;
+}
+
+.slider__go{
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.companys__swiper{
+  margin-left: 16px;
+  @media (min-width: $sizeM){
+    margin-left: 24px;
+  }
+  @media (min-width: $sizeLl){
+    margin-left: 32px;
+  }
+}
+
+.companys-wrapper{
+  @media (min-width: $sizeM){
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.companys-slide{
+  width: 240px;
+  @media (min-width: $sizeM){
+    margin-right: 2%;
+    margin-bottom: 16px;
+  }
+}
+
+.companys-pagination{
+  position: relative;
+  margin-top: 21px;
+  @media (min-width: $sizeM){
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  background-color: $pagination-bullet;
+}
